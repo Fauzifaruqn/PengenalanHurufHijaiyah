@@ -1,0 +1,47 @@
+%CREATE TEMPLATES
+%Letter
+A=imread('letters_numbers_\A.bmp');
+B=imread('bitmap_huruf\B.bmp');
+C=imread('bitmap_huruf\C.bmp');
+D=imread('bitmap_huruf\D.bmp');
+E=imread('bitmap_huruf\E.bmp');
+F=imread('bitmap_huruf\F.bmp');
+G=imread('bitmap_huruf\G.bmp');
+H=imread('bitmap_huruf\H.bmp');
+I=imread('bitmap_huruf\I.bmp');
+J=imread('bitmap_huruf\J.bmp');
+K=imread('bitmap_huruf\K.bmp');
+L=imread('bitmap_huruf\L.bmp');
+M=imread('bitmap_huruf\M.bmp');
+N=imread('bitmap_huruf\N.bmp');
+O=imread('bitmap_huruf\O.bmp');
+P=imread('bitmap_huruf\P.bmp');
+Q=imread('bitmap_huruf\Q.bmp');
+R=imread('bitmap_huruf\R.bmp');
+S=imread('bitmap_huruf\S.bmp');
+T=imread('bitmap_huruf\T.bmp');
+U=imread('bitmap_huruf\U.bmp');
+V=imread('bitmap_huruf\V.bmp');
+W=imread('bitmap_huruf\W.bmp');
+X=imread('bitmap_huruf\X.bmp');
+Y=imread('bitmap_huruf\Y.bmp');
+Z=imread('bitmap_huruf\Z.bmp');
+%Number
+one=imread('bitmap_huruf\1.bmp');  two=imread('bitmap_huruf\2.bmp');
+three=imread('bitmap_huruf\3.bmp');four=imread('bitmap_huruf\4.bmp');
+five=imread('bitmap_huruf\5.bmp'); six=imread('bitmap_huruf\6.bmp');
+seven=imread('bitmap_huruf\7.bmp');eight=imread('bitmap_huruf\8.bmp');
+nine=imread('bitmap_huruf\9.bmp'); zero=imread('bitmap_huruf\0.bmp');
+%*-*-*-*-*-*-*-*-*-*-*-
+letter=[A B C D E F G H I J K L M...
+    N O P Q R S T U V W X Y Z];
+number=[one two three four five...
+    six seven eight nine zero];
+character=[letter number];
+templates=mat2cell(character,42,[24 24 24 24 24 24 24 ...
+    24 24 24 24 24 24 24 ...
+    24 24 24 24 24 24 24 ...
+    24 24 24 24 24 24 24 ...
+    24 24 24 24 24 24 24 24]);
+save ('templates','templates')
+clear all
